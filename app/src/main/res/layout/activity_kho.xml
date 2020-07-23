@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.KhoActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:background="@drawable/rounded_red_edittext"
+                android:id="@+id/spinnerSanPhamkho"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+        android:weightSum="5">
+        <EditText
+            android:background="@drawable/rounded_red_edittext"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DD-MM-YYYY"
+            android:id="@+id/edDateKho"
+            android:layout_weight="4"
+            android:textSize="18dp"/>
+        <Button
+            android:id="@+id/picDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chọn"
+            android:textColor="#fff"
+            android:background="@drawable/button"
+            android:onClick="datePicker"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+    <EditText
+        android:background="@drawable/rounded_red_edittext"
+        android:padding="8dp"
+        android:textSize="20dp"
+        android:id="@+id/edSoLuongKho"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        android:hint="Số lượng" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <Button
+            android:onClick="addKho"
+            android:id="@+id/BtnAddKho"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:textColor="#fff"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button"
+            tools:ignore="OnClick" />
+        <Button
+            android:onClick="HuyKho"
+            android:id="@+id/BtnHuyKho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="hủy"
+            android:background="@drawable/button"
+            android:textColor="#fff"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

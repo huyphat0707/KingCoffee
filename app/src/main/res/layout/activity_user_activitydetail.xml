@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgr1"
+    android:layout_margin="10dp"
+    tools:context=".activity.UserActivitydetail">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:background="@drawable/rounded_red_edittext"
+            android:id="@+id/edtendangnhapuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="8dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_user_add_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Tên đăng nhập"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName"
+            />
+
+
+
+        <EditText
+            android:background="@drawable/rounded_red_edittext"
+            android:padding="8dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/edtSodienthoaiuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_call_end_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Số điện thoại"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnaddnguoidung"
+                android:text="Cập nhật "
+                android:onClick="Capnhat"
+                android:textColor="#fff"
+                android:background="@drawable/button"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="OnClick" />
+            <Button
+                android:onClick="huy"
+                android:id="@+id/btncancelnguoidung"
+                android:text="hủy "
+                android:background="@drawable/button"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

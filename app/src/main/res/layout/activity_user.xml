@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgr1"
+    android:layout_margin="10dp"
+    tools:context=".activity.UserActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:background="@drawable/user"-->
+<!--            />-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/edtHouser"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:hint="Họ"-->
+<!--                android:inputType="textPersonName"-->
+<!--                />-->
+<!--            <EditText-->
+<!--                android:id="@+id/edtTenuser"-->
+<!--                android:hint="Tên"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="textPersonName"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+    <EditText
+        android:background="@drawable/rounded_red_edittext"
+        android:id="@+id/edtendangnhapuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="8dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_user_add_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Tên đăng nhập"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        />
+
+
+
+    <EditText
+        android:background="@drawable/rounded_red_edittext"
+        android:padding="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:hint="Mật khẩu"
+        android:drawableLeft="@drawable/ic_pass_black_24dp"
+        android:drawablePadding="10dp"
+        android:textSize="20dp"
+        android:id="@+id/edtmatkhauuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:background="@drawable/rounded_red_edittext"
+        android:padding="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:hint="Nhắc lại mật khẩu"
+        android:id="@+id/edtNhacLaimatkhauuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_pass_black_24dp"
+        android:drawablePadding="10dp"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        />
+        <EditText
+            android:background="@drawable/rounded_red_edittext"
+            android:padding="8dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/hovatenuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_user_add_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Họ và tên"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName"
+            />
+        <EditText
+            android:background="@drawable/rounded_red_edittext"
+            android:padding="8dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/edtSodienthoaiuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_call_end_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Số điện thoại"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:background="@drawable/rounded_red_edittext"
+            android:padding="8dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:hint="Ngày sinh"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+            android:drawablePadding="10dp"
+            android:id="@+id/edtNgaySinhuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_weight="1"
+            />
+        <Button
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_red_edittext"
+            android:padding="8dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="4"
+            android:text="date"
+            android:onClick="chon"
+            android:id="@+id/datepicker"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giới tính" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radioButtonnam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nam" />
+        <RadioButton
+            android:id="@+id/radioButtonnu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nữ"
+            android:layout_weight="1"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnaddnguoidung"
+            android:text="thêm "
+            android:onClick="add"
+            android:textColor="#fff"
+            android:background="@drawable/button"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+        <Button
+            android:onClick="huy"
+            android:id="@+id/btncancelnguoidung"
+            android:text="hủy "
+            android:background="@drawable/button"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.kingcoffee">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.ThongKeActivity"></activity>
+        <activity android:name=".activity.GioiThieuActivity" />
+        <activity android:name=".activity.HoaDonActivity" />
+        <activity android:name=".activity.TableThanhToan" />
+        <activity android:name=".activity.TableOder" />
+        <activity android:name=".activity.KhoActivityDetail" />
+        <activity android:name=".activity.KhoActivityList" />
+        <activity android:name=".activity.KhoActivity" />
+        <activity android:name=".activity.ThucDonActivityDetail" />
+        <activity android:name=".activity.ThucDonActivityList" />
+        <activity android:name=".activity.TheLoaiActivityDetail" />
+        <activity android:name=".activity.TheLoaiActivityList" />
+        <activity android:name=".activity.ShareActivity" />
+        <activity android:name=".activity.NhanVienActivityListDetail" />
+        <activity android:name=".activity.TheLoaiActivity" />
+        <activity android:name=".activity.NhanVienActivityList" />
+        <activity android:name=".activity.NhanVienActivityDetail" />
+        <activity android:name=".activity.UserActivityList" />
+        <activity android:name=".activity.UserActivitydetail" />
+        <activity android:name=".Main2Activity">
+
+        </activity>
+        <activity android:name=".map.MapsActivity" />
+        <activity android:name=".activity.ThucDonActivity" />
+        <activity android:name=".activity.NhanVienActivity" />
+        <activity android:name=".activity.UserActivity" />
+        <activity android:name=".activity.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SplashScreen" />
+        <activity android:name=".activity.TableActivityList" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+    </application>
+
+</manifest>

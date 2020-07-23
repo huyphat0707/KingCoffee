@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/nen"
+        tools:ignore="MissingConstraints">
+    <TableLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:stretchColumns="1"
+        android:layout_marginTop="300dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        tools:ignore="MissingConstraints">
+        <TableRow>
+            <Button
+                android:onClick="menu"
+                android:id="@+id/btnmenumain"
+                android:drawableTop="@drawable/ic_menu_black_24dp"
+                android:text="@string/menu"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@drawable/btmain"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                tools:ignore="OnClick" />
+            <Button
+                android:onClick="theloai"
+                android:id="@+id/btntheLoaimain"
+                android:text="@string/TheLoai"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@drawable/btmain"
+                android:drawableTop="@drawable/ic_theloai_black_24dp"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                tools:ignore="OnClick" />
+            <Button
+                android:onClick="table"
+                android:id="@+id/btngoimonmain"
+                android:text="@string/goimon"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@drawable/btmain"
+                android:drawableTop="@drawable/ic_goimon_black_24dp"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                tools:ignore="OnClick" />
+
+
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:onClick="hoadon"
+                android:id="@+id/btnhoadonMain"
+                android:text="@string/hoadon"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@drawable/btmain"
+                android:layout_width="130dp"
+                android:drawableTop="@drawable/ic_add_bill_black_24dp"
+                android:layout_height="100dp"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:onClick="ThongKe"
+                android:id="@+id/btnthongkemain"
+                android:text="@string/ThongKe"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@drawable/btmain"
+                android:drawableTop="@drawable/ic_thongke_black_24dp"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                tools:ignore="OnClick" />
+            <Button
+                android:onClick="Kho"
+                android:id="@+id/btnkhomain"
+                android:text="@string/kho"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@drawable/btmain"
+                android:layout_width="130dp"
+                android:drawableTop="@drawable/ic_kho_black_24dp"
+                android:layout_height="100dp"
+                tools:ignore="OnClick" />
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:onClick="map"
+                android:id="@+id/btnmapmain"
+                android:text="@string/Map"
+                android:textColor="#fff"
+                android:background="@drawable/btmain"
+                android:drawableTop="@drawable/ic_location_on_black_24dp"
+                android:layout_height="100dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="130dp"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:onClick="gioithieu"
+                android:id="@+id/btngioithieumain"
+                android:text="@string/gioithieu"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@drawable/btmain"
+                android:drawableTop="@drawable/ic_gioithieu_black_24dp"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                tools:ignore="OnClick" />
+            <Button
+                android:onClick="NhanVien"
+                android:id="@+id/btnnhanvienmain"
+                android:text="@string/nhanvien"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@drawable/btmain"
+                android:drawableTop="@drawable/ic_user_circle_black_24dp"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                tools:ignore="OnClick" />
+        </TableRow>
+    </TableLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

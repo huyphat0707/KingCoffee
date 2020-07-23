@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgr3"
+    tools:context=".activity.ShareActivity">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" >
+
+
+        <EditText
+            android:id="@+id/edtieude"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_red_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:inputType="textPersonName"
+            android:hint="Tiêu Đề" />
+
+        <EditText
+
+            android:id="@+id/edMota"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_red_edittext"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textStyle="bold"
+            android:inputType="textPersonName"
+            android:hint="Mô Tả" />
+
+        <EditText
+
+            android:id="@+id/edDuongDan"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_red_edittext"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Đường Dẫn" />
+
+        <Button
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:id="@+id/btnLink"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHARE LINK" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imghinh"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            />
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:background="@drawable/ic_camera_alt_black_24dp"/>
+    <Button
+        android:id="@+id/loadHinh"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:background="@drawable/ic_file_upload_black_24dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="220dp"
+        android:layout_height="wrap_content">
+    <Button
+            android:id="@+id/btnImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share image"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"/>
+    </LinearLayout>
+</RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+            <Button
+                android:id="@+id/quayvideo"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="220dp"
+                android:background="@drawable/ic_video_call_black_24dp"/>
+            <Button
+                android:id="@+id/loadvideo"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:background="@drawable/ic_file_upload_black_24dp"/>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_marginTop="60dp"
+          android:layout_marginLeft="220dp"
+          android:layout_height="wrap_content">
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/btnVideo"
+            android:background="@drawable/button"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:text="share video" />
+      </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

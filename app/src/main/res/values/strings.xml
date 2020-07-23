@@ -1,0 +1,26 @@
+<resources>
+    <!--    button-->
+    <string name="menu">Menu</string>
+    <string name="TheLoai">Thể Loại</string>
+    <string name="Map">Map</string>
+    <string name="ThongKe">Thống Kê</string>
+    <string name="share">Share</string>
+    <string name="gioithieu">Giới Thiệu</string>
+    <string name="goimon">Gọi Món</string>
+    <string name="kho">Kho</string>
+    <string name="nhanvien">Nhân Viên</string>
+    <string name="Doanhthu">Doanh Thu</string>
+    <string name="hoadon">Hóa Đơn</string>
+    <!--    buton-->
+
+    <string name="app_name">KingCoffee</string>
+    <string name="facebook_app_id">511688006090127</string>
+    <string name="fb_login_protocol_scheme">fb511688006090127</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">[ACCOUNT_KIT_CLIENT_TOKEN]</string>
+    <string name="insert_table">Thêm bàn</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="insert_name">Tên bàn</string>
+    <string name="change">Sửa</string>
+    <string name="delete">Xóa</string>
+    <string name="add">Thêm người dùng</string>
+</resources>

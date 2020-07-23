@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.HoaDonActivity">
+
+    <TextView
+        android:text="@string/hoadon"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_red_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#000"
+            android:inputType="textPersonName"
+            android:text="Bàn Số"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="Giờ" />
+           <TextView
+               android:textColor="#000"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="10"
+               android:inputType="textPersonName"
+               android:text="Ngày"
+               android:textStyle="bold"
+               />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tongtien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="end"
+            android:inputType="textPersonName"
+            android:text="Tổng tiền "
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+    </LinearLayout>
+<ListView
+    android:id="@+id/listhoadon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints" />
+</LinearLayout>
